@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LazZiya.TagHelpers.Localization</name>
+    </assembly>
+    <members>
+        <member name="T:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase">
+            <summary>
+            base class for localize tag helpers
+            </summary>
+        </member>
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.Args">
+            <summary>
+            pass array of objects for arguments
+            </summary>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+            
+        </member>
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.Localize">
+            <summary>
+            Bool value, true to localize content
+            </summary>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LazZiya.TagHelpers.Localization.LocalizeTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeTagHelper.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
+            <summary>
+            inject SharedCultureLocalizer
+            </summary>
+            <param name="loc"></param>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

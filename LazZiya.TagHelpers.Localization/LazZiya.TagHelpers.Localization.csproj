@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2</TargetFrameworks>
+    <ApplicationIcon>files\icon.ico</ApplicationIcon>
+    <Authors>Ziya Mollamahmut</Authors>
+    <Company>Ziyad.info</Company>
+    <Description>Localization TagHelper for Asp.Net Core 2.x, use html tag to localize texts in razor views.</Description>
+    <Copyright>Ziyad.info</Copyright>
+    <PackageProjectUrl>http://www.ziyad.info/en/articles/27-LazZiya_TagHelpers</PackageProjectUrl>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageIcon>files\icon.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
+    <PackageReleaseNotes>- LocalizeTagHelper to localize texts in razor views.</PackageReleaseNotes>
+    <Version>0.0.1</Version>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <FileVersion>0.0.1.0</FileVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/LazZiya/TagHelpers.Localization/master/LazZiya.TagHelpers.Localization/files/icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/LazZiya/TagHelpers.Localization</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp2.0|AnyCPU'">
+    <DocumentationFile>D:\MyWorks\WebDev\LazZiya\TagHelpers.Localization\LazZiya.TagHelpers.Localization\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.0|AnyCPU'">
+    <DocumentationFile>D:\MyWorks\WebDev\LazZiya\TagHelpers.Localization\LazZiya.TagHelpers.Localization\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' OR '$(TargetFramework)' == 'netcoreapp2.2'">
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="1.1.2" Exclude="build,analyzers" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="files\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="files\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="files\license.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
+  
+</Project>
