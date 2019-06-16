@@ -32,7 +32,7 @@ namespace LazZiya.TagHelpers.Localization
         /// <returns></returns>
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            if (Localize)
+            if (Localize || (Args != null && Args.Length > 0) || !string.IsNullOrEmpty(Culture) || ResourceSource != null)
             {
                 await base.ProcessAsync(context, output);
             }

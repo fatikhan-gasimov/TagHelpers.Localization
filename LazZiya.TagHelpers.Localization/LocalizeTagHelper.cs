@@ -26,7 +26,7 @@ namespace LazZiya.TagHelpers.Localization
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
             //replace <localize> tag with <span>
-            output.TagName = "span";
+            output.TagName = "";
             await base.ProcessAsync(context, output);
         }
     }

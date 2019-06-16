@@ -14,6 +14,16 @@
             pass array of objects for arguments
             </summary>
         </member>
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.Culture">
+            <summary>
+            localization string with reference to the specified culture
+            </summary>
+        </member>
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.ResourceSource">
+            <summary>
+            type of the localized resource file that containes the local culture strings
+            </summary>
+        </member>
         <member name="M:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
             <summary>
             inject SharedCultureLocalizer
