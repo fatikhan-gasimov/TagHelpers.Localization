@@ -38,4 +38,4 @@ Localize attributes e.g. alt attribute:
 ````
 
 # Live demos:
-http://demo.ziyad.info
+http://demo.ziyad.info/en/localize
