@@ -1,5 +1,5 @@
 # TagHelpers.Localization
-Use html tag to localize texts and html contents in razor views
+Use html tag to localize texts and html contents in razor pages for Asp.Net Core 2.x web applications 
 
 ## Installation
 ````
