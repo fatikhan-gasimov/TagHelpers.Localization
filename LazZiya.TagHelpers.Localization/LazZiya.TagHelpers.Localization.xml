@@ -38,24 +38,29 @@
             <param name="output"></param>
             <returns></returns>
         </member>
-        <member name="T:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper">
+        <member name="T:LazZiya.TagHelpers.Localization.LocalizeAttributesTagHelper">
             <summary>
             Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
             </summary>
             
         </member>
-        <member name="P:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.Localize">
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizeAttributesTagHelper.Localize">
             <summary>
             Bool value, true to localize content
             </summary>
         </member>
-        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
+        <member name="P:LazZiya.TagHelpers.Localization.LocalizeAttributesTagHelper.LocalizeAttribute">
+            <summary>
+            localize custom attribute fields
+            </summary>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributesTagHelper.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">
             <summary>
             inject SharedCultureLocalizer
             </summary>
             <param name="loc"></param>
         </member>
-        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+        <member name="M:LazZiya.TagHelpers.Localization.LocalizeAttributesTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
             <summary>
             process localize tag helper
             </summary>
