@@ -21,7 +21,7 @@
         </member>
         <member name="P:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.ResourceSource">
             <summary>
-            type of the localized resource file that containes the local culture strings
+            type of the source of localized resources file that containes the local culture strings
             </summary>
         </member>
         <member name="M:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase.#ctor(LazZiya.ExpressLocalization.SharedCultureLocalizer)">

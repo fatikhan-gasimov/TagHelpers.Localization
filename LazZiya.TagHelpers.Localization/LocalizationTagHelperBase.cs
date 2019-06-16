@@ -27,9 +27,9 @@ namespace LazZiya.TagHelpers.Localization
         public string Culture { get; set; } = string.Empty;
 
         /// <summary>
-        /// type of the localized resource file that containes the local culture strings
+        /// type of the source of localized resources file that containes the local culture strings
         /// </summary>
-        [HtmlAttributeName("localize-resource-source")]
+        [HtmlAttributeName("localize-source")]
         public Type ResourceSource { get; set; }
 
         /// <summary>
