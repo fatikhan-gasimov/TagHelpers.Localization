@@ -32,5 +32,10 @@ Use localization args:
 </p>
 ````
 
+Localize attributes e.g. alt attribute:
+````razor
+<img src="/images/lost-image.png" localize-att-alt="Cake and kuice image" />
+````
+
 # Live demos:
 http://demo.ziyad.info
