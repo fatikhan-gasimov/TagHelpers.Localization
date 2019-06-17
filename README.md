@@ -1,4 +1,4 @@
-# TagHelpers.Localization
+# LazZiya.TagHelpers.Localization
 Use html tag to localize texts and html contents in razor pages for Asp.Net Core 2.x web applications 
 
 ## Installation
@@ -6,7 +6,7 @@ Use html tag to localize texts and html contents in razor pages for Asp.Net Core
 Install-Package LazZiya.TagHelpers.Localization -Version 1.0.0
 ````
 
-## Usage
+## Localize TagHelper Usage
 Use localize tag directly:
 ````razor
 <localize>Hellow world!</localize>
@@ -34,8 +34,19 @@ Use localization args:
 
 Localize attributes e.g. alt attribute:
 ````razor
-<img src="/images/lost-image.png" localize-att-alt="Cake and kuice image" />
+<img src="/images/lost-image.png" localize-att-alt="Cake and juice image" />
 ````
+
+## dependencies
+Two nuget packages will be installed automatically with TagHelpers.Localization :
+
+- [LazZiya.ExpressLocalization](https://github.com/lazziya/ExpressLocalization) : required for localization setup
+- [LazZiya.TagHelpers](https://github.com/lazziya/TagHelpers) : main TagHelpers package
+
+Check for updates after install.
+
+## Localization Setup
+In order for localize tag helper to work the localization setup must be done in startup.cs as described in [LazZiya.ExpressLocalization](https://github.com/lazziya/ExpressLocalization)
 
 # Live demos:
 http://demo.ziyad.info/en/localize
