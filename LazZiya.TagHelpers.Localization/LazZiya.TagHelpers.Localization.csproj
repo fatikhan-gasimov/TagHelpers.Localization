@@ -12,10 +12,10 @@
     <PackageIcon>files\icon.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
-    <PackageReleaseNotes>- LocalizeTagHelper to simply localize razor views using localize html tag.</PackageReleaseNotes>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <PackageReleaseNotes>- Hotfix to referenced package, upgraded to v2.0.1</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/LazZiya/TagHelpers.Localization/master/LazZiya.TagHelpers.Localization/files/icon.png</PackageIconUrl>
@@ -31,7 +31,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' OR '$(TargetFramework)' == 'netcoreapp2.2'">
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="2.0.0" Exclude="build,analyzers" />
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="2.0.1" Exclude="build,analyzers" />
   </ItemGroup>
 
   <ItemGroup>
