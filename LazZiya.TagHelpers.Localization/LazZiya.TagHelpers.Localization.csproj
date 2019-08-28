@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0</TargetFrameworks>
     <ApplicationIcon>files\icon.ico</ApplicationIcon>
     <Authors>Ziya Mollamahmut</Authors>
     <Company>Ziyad.info</Company>
@@ -12,26 +12,26 @@
     <PackageIcon>files\icon.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
-    <PackageReleaseNotes>- Hotfix to referenced package, upgraded to v2.0.1</PackageReleaseNotes>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <PackageReleaseNotes>Added support for DotNetCore 3.0</PackageReleaseNotes>
+    <Version>1.1.0-preview</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/LazZiya/TagHelpers.Localization/master/LazZiya.TagHelpers.Localization/files/icon.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/LazZiya/TagHelpers.Localization</RepositoryUrl>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp2.0|AnyCPU'">
-    <DocumentationFile>D:\MyWorks\WebDev\LazZiya\TagHelpers.Localization\LazZiya.TagHelpers.Localization\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.0|AnyCPU'">
-    <DocumentationFile>D:\MyWorks\WebDev\LazZiya\TagHelpers.Localization\LazZiya.TagHelpers.Localization\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
+  <PropertyGroup>
+    <DocumentationFile>files\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' OR '$(TargetFramework)' == 'netcoreapp2.2'">
     <PackageReference Include="LazZiya.ExpressLocalization" Version="2.0.1" Exclude="build,analyzers" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview" Exclude="build,analyzers"/>
   </ItemGroup>
 
   <ItemGroup>
