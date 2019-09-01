@@ -13,7 +13,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
     <PackageReleaseNotes>Added support for DotNetCore 3.0</PackageReleaseNotes>
-    <Version>1.1.0-preview</Version>
+    <Version>1.1.0-preview1</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
