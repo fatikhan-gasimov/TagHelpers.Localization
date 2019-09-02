@@ -5,7 +5,7 @@
     <ApplicationIcon>files\icon.ico</ApplicationIcon>
     <Authors>Ziya Mollamahmut</Authors>
     <Company>Ziyad.info</Company>
-    <Description>Localization TagHelper for Asp.Net Core 2.x, use localize html tag to easily localize razor views.</Description>
+    <Description>Localization TagHelper for Asp.Net Core. Use html tag to easily localize razor views.</Description>
     <Copyright>Ziyad.info</Copyright>
     <PackageProjectUrl>http://www.ziyad.info/en/articles/27-LazZiya_TagHelpers</PackageProjectUrl>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
@@ -13,7 +13,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
     <PackageReleaseNotes>Added support for DotNetCore 3.0</PackageReleaseNotes>
-    <Version>1.1.0-preview</Version>
+    <Version>1.1.0-preview1</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -26,12 +26,12 @@
     <DocumentationFile>files\LazZiya.TagHelpers.Localization.xml</DocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' OR '$(TargetFramework)' == 'netcoreapp2.2'">
+  <!--<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0' OR '$(TargetFramework)' == 'netcoreapp2.1' OR '$(TargetFramework)' == 'netcoreapp2.2'">
     <PackageReference Include="LazZiya.ExpressLocalization" Version="2.0.1" Exclude="build,analyzers" />
   </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview" Exclude="build,analyzers"/>
+-->
+  <ItemGroup>
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview1" Exclude="build,analyzers"/>
   </ItemGroup>
 
   <ItemGroup>
