@@ -1,5 +1,7 @@
+
 # LazZiya.TagHelpers.Localization
 Use html tag to localize texts and html contents in razor pages for Asp.Net Core 2.x web applications 
+> - Preview version for Asp.Net Core 3.0 is available [here][1]
 
 ## Installation
 ````
@@ -55,3 +57,5 @@ In order for localize tag helper to work the localization setup must be done in 
 
 # Live demos:
 http://demo.ziyad.info/en/localize
+
+[1]: https://github.com/LazZiya/TagHelpers.Localization/tree/TagHelpersLocalizationCore3
