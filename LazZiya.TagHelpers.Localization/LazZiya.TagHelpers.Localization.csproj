@@ -12,8 +12,11 @@
     <PackageIcon>files\icon.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
-    <PackageReleaseNotes>Added support for DotNetCore 3.0</PackageReleaseNotes>
-    <Version>1.1.0-preview1</Version>
+    <PackageReleaseNotes>
+      - Update to use nuget package LazZiya.ExpressLocalization v3.0.0-preview2
+      - Added support for DotNetCore 3.0      
+    </PackageReleaseNotes>
+    <Version>1.1.0-preview2</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -31,7 +34,7 @@
   </ItemGroup>
 -->
   <ItemGroup>
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview1" Exclude="build,analyzers"/>
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview2" Exclude="build,analyzers"/>
   </ItemGroup>
 
   <ItemGroup>
