@@ -59,20 +59,20 @@ namespace LazZiya.TagHelpers.Localization
 
                 if (!string.IsNullOrEmpty(Culture) && ResourceSource != null)
                     //localize from specified culture and resource type
-                    _localStr = _loc.Text(ResourceSource, Culture, str, Args); 
+                    _localStr = _loc.GetLocalizedHtmlString(ResourceSource, Culture, str, Args); 
 
                 else if (!string.IsNullOrEmpty(Culture) && ResourceSource == null)
                     //localize from specified culture and default view localization resource 
                     //type that is defined in startup in .AddExpressLocalization<T1, T2> 
                     //where T2 is the view localization resource
-                    _localStr = _loc.Text(Culture, str, Args);
+                    _localStr = _loc.GetLocalizedHtmlString(Culture, str, Args);
 
                 else if (string.IsNullOrEmpty(Culture) && ResourceSource != null)
                     //localize from specified resource type using CultureInfo.CurrentCulture.Name
-                    _localStr = _loc.Text(ResourceSource, str, Args);
+                    _localStr = _loc.GetLocalizedHtmlString(ResourceSource, str, Args);
                 else
                     //use default localization
-                    _localStr = _loc.Text(str, Args);
+                    _localStr = _loc.GetLocalizedHtmlString(str, Args);
 
                 output.Content.SetHtmlContent(_localStr);
             }

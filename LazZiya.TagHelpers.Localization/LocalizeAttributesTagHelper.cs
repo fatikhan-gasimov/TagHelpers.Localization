@@ -62,7 +62,7 @@ namespace LazZiya.TagHelpers.Localization
                     if (att.Name.StartsWith(_LocalizeAtt))
                     {
                         //get localized attribute value
-                        var localAttValue = _loc.Text(att.Value.ToString());
+                        var localAttValue = _loc.GetLocalizedHtmlString(att.Value.ToString());
 
                         //add new ttribute with new name and locized value to the list
                         addAttributes.Add(new TagHelperAttribute(att.Name.Replace(_LocalizeAtt, ""), localAttValue));
