@@ -9,14 +9,13 @@
     <Copyright>Ziyad.info</Copyright>
     <PackageProjectUrl>http://www.ziyad.info/en/articles/27-LazZiya_TagHelpers</PackageProjectUrl>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
-    <PackageIcon>files\icon.png</PackageIcon>
+    <PackageIcon>icon.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>asp.net, core, razor, mvc, taghelpers, taghelper,tag,helper,language,culture,localization</PackageTags>
     <PackageReleaseNotes>
-      - Update to use nuget package LazZiya.ExpressLocalization v3.0.0-preview2
-      - Added support for DotNetCore 3.0      
+      - DotNetCore 3.0 support
     </PackageReleaseNotes>
-    <Version>1.1.0-preview2</Version>
+    <Version>1.1.0</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -34,14 +33,14 @@
   </ItemGroup>
 -->
   <ItemGroup>
-    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0-preview2" Exclude="build,analyzers"/>
+    <PackageReference Include="LazZiya.ExpressLocalization" Version="3.0.0" Exclude="build,analyzers"/>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="files\icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="files\icon.png">
+    <None Include="files\icon.png" Pack="true" PackagePath="">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="files\license.txt" Pack="true" PackagePath="" />
