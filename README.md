@@ -4,7 +4,7 @@ Use html tag to localize texts and html contents in razor pages for Asp.Net Core
 
 ## Release history
 - v1.3.0 - 04.01.2020
-- New breaking change - [CultureAnchoreTagHelper][#cultureanchoretaghelper] : Automatically add `{culture}` to the route values of all anchor taghelpers. 
+- New breaking change - [CultureAnchoreTagHelper](#cultureanchortaghelper) : Automatically add `{culture}` to the route values of all anchor taghelpers. 
 
 ## Installation
 ````
