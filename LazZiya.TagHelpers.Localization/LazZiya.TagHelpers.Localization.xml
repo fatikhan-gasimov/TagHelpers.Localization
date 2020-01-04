@@ -4,6 +4,17 @@
         <name>LazZiya.TagHelpers.Localization</name>
     </assembly>
     <members>
+        <member name="T:LazZiya.TagHelpers.Localization.CultureAnchorTagHelper">
+            <summary>
+            Override default the anchore tag to add culture parameter to the route
+            </summary>
+        </member>
+        <member name="M:LazZiya.TagHelpers.Localization.CultureAnchorTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)">
+            <summary>
+            Add culture value to the anchor tag
+            </summary>
+            <param name="generator"></param>
+        </member>
         <member name="T:LazZiya.TagHelpers.Localization.LocalizationTagHelperBase">
             <summary>
             base class for localize tag helpers

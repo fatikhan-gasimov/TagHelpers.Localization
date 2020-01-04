@@ -1,5 +1,4 @@
 ﻿using LazZiya.ExpressLocalization;
-using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Localization;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System;
