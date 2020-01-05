@@ -1,4 +1,3 @@
-
 # LazZiya.TagHelpers.Localization
 Use html tag to localize texts and html contents in razor pages for Asp.Net Core web applications. And automatically have the `{culture}` parameter added to route values for every anchor.
 
@@ -52,14 +51,20 @@ Localize attributes e.g. alt attribute:
 ## CultureAnchorTagHelper
 Starting from v1.3.0 it is not necessary to manually add `asp-route-culture="culture"` to every link. With the new built-in [`CultureAnchorTagHelper`][2] the current culture will be added to the route value automatically.
 
+### A - Enable CultureAnchorTagHelper (default)
+
+The tag helper is enabled by default, but it requires removing the framework's [`AnchorTagHelper`][3] from `_ViewImports` :
+
+````
+@removeTagHelper Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers
+````
+
+So using an anchor as below will produce link with culture `/en/Index` :
 ````html
 <a localize-content asp-page="/Index">Home</a>
 ````
 
-This change requires removing the default [`AnchorTagHelper`][3] from `_ViewImports` :
-````
-@removeTagHelper Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers
-````
+### B - Disable CultureAnchorTagHelper
 
 If you still want to use the default [`AnchorTagHelper`][3] just remove the [`CultureAnchorTagHelper`][2] from `_ViewImports` :
 ````
@@ -70,6 +75,7 @@ But in this case you will need to manually add `asp-route-culture="..."` to ever
 ````html
 <a localize-content asp-page="/Index" asp-route-culture="@culture">Home</a>
 ````
+
 ## dependencies
 Two nuget packages will be installed automatically with TagHelpers.Localization :
 
