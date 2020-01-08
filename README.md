@@ -11,7 +11,7 @@ Install-Package LazZiya.TagHelpers.Localization
 ````
 Then inject localize tag helper in *_ViewImports.cshtml* file
 ````razor
-addTagHelpers *, LazZiya.TagHelpers.Localization
+@addTagHelpers *, LazZiya.TagHelpers.Localization
 
 @* IMPORTANT : starting from v1.3.0 *@
 @removeTagHelper Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper, Microsoft.AspNetCore.Mvc.TagHelpers
